@@ -41,7 +41,7 @@ void main() async {
       final result = await usecase(bankTransaction: bankTransaction);
 
       // assert
-      expect(result, const Right(1));
+      expect(result, const Right(0));
       verify(mockRepository.addBankTransaction(bankTransaction));
       verifyNoMoreInteractions(mockRepository);
     });
