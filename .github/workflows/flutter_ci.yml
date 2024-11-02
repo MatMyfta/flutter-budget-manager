@@ -10,8 +10,7 @@ jobs:
     name: Setup Environment
     runs-on: ubuntu-latest
     outputs:
-      flutter-cache: 
-        description: 'Flutter setup complete'
+      description: 'Flutter setup complete'
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
